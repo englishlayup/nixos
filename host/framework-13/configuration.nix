@@ -163,6 +163,10 @@
     brightnessctl
     pavucontrol
     playerctl
+    # Applications
+    syncthing
+    kdePackages.dolphin
+    clipse
   ];
 
   programs.fish.enable = true;
