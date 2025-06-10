@@ -121,6 +121,16 @@
   # Polkit for authentication popups
   security.polkit.enable = true;
 
+  services.logind = {
+    lidSwitch = "suspend";
+    lidSwitchExternalPower = "lock";
+    extraConfig = ''
+      HandlePowerKey=suspend
+      IdleAction=lock
+      IdleActionSec=15min
+    '';
+  };
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
