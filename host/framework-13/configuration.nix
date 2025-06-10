@@ -163,8 +163,6 @@
     brightnessctl
     pavucontrol
     playerctl
-    # File Manager
-    kdePackages.dolphin
   ];
 
   programs.fish.enable = true;
