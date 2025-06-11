@@ -4,7 +4,7 @@ if git diff --quiet '*.nix'; then
     echo "No changes detected, exiting."
     exit 0
 fi
-nixfmt . &>/dev/null \
+nixfmt ./**/*.nix &>/dev/null \
   || ( nixfmt . ; echo "formatting failed!" && exit 1)
 git diff -U0 ./*.nix
 echo "NixOS Rebuilding..."

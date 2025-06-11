@@ -124,11 +124,7 @@
   services.logind = {
     lidSwitch = "suspend";
     lidSwitchExternalPower = "lock";
-    extraConfig = ''
-      HandlePowerKey=suspend
-      IdleAction=lock
-      IdleActionSec=15min
-    '';
+    powerKey = "suspend";
   };
 
   # List packages installed in system profile. To search, run:
@@ -167,7 +163,6 @@
     hyprpaper # Wallpaper daemon
     hyprlock # Screen locker with fingerprint support
     hypridle # Idle daemon
-    hyprpicker # Color picker
     # System Utils
     networkmanagerapplet
     brightnessctl
