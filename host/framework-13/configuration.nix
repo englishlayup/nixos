@@ -168,6 +168,10 @@
     brightnessctl
     pavucontrol
     playerctl
+    wl-clipboard
+    # Screenshot
+    grim
+    slurp
     # Applications
     syncthing
     kdePackages.dolphin
