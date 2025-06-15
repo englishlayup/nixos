@@ -190,7 +190,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland (UWSM)";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd 'Hyprland (UWSM)'";
         user = "englishlayup";
       };
     };
