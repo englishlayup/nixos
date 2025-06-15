@@ -117,6 +117,7 @@
     login.fprintAuth = true;
     sudo.fprintAuth = true;
     hyprlock.fprintAuth = true;
+
   };
   # Polkit for authentication popups
   security.polkit.enable = true;
@@ -133,7 +134,6 @@
     home-manager
     # Browser
     librewolf
-    brave
     # Terminal
     ghostty
     # CLI Utils
