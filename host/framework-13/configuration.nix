@@ -118,6 +118,8 @@
     sudo.fprintAuth = true;
     hyprlock.fprintAuth = true;
   };
+  # Polkit for authentication popups
+  security.polkit.enable = true;
 
   services.logind = {
     lidSwitch = "lock";
