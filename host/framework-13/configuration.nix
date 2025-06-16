@@ -156,6 +156,7 @@
     fzf
     jq
     # Desktop Environment
+    nwg-look
     waybar
     dunst # Notification daemon
     libnotify
