@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-set -e
+set -Eeuo pipefail
+HOST=$1
 if git diff --quiet '*.nix'; then
     echo "No changes detected, exiting."
     exit 0
@@ -9,7 +10,7 @@ nixfmt ./**/*.nix &>/dev/null \
 git diff -U0 ./*.nix
 echo "NixOS Rebuilding..."
 # shellcheck disable=SC2024
-sudo nixos-rebuild switch --flake "$PWD" &>nixos-switch.log || (
+sudo nixos-rebuild switch --flake "$PWD#$HOST" &>nixos-switch.log || (
 grep --color error < nixos-switch.log  && exit 1)
 current=$(nixos-rebuild list-generations | grep current)
 git commit -am "$current"
