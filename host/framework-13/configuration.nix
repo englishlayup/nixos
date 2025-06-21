@@ -2,7 +2,12 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   imports = [
@@ -190,7 +195,6 @@
     syncthing
     kdePackages.dolphin
     clipse
-    postgresql
   ];
 
   programs.fish.enable = true;
@@ -208,6 +212,14 @@
         user = "englishlayup";
       };
     };
+  };
+
+  services.postgresql = {
+    enable = true;
+    authentication = pkgs.lib.mkOverride 10 ''
+      #type database  DBuser  auth-method
+      local all       all     trust
+    '';
   };
 
   # Hint Electron apps to use Wayland:
