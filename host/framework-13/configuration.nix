@@ -190,6 +190,7 @@
     syncthing
     kdePackages.dolphin
     clipse
+    postgresql
   ];
 
   programs.fish.enable = true;
