@@ -140,7 +140,7 @@
   security.polkit.enable = true;
 
   services.logind = {
-    lidSwitch = "lock";
+    lidSwitch = "suspend";
     lidSwitchExternalPower = "lock";
     powerKey = "suspend";
   };
