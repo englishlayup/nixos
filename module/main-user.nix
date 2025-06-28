@@ -22,11 +22,6 @@
         "networkmanager"
         "wheel"
       ];
-      packages = with pkgs; [
-        neovim
-        fish
-      ];
-      shell = pkgs.fish;
     };
   };
 }
