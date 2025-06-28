@@ -200,9 +200,6 @@
   ];
 
   environment = {
-    pathsToLink = [
-      "/bin"
-    ];
     localBinInPath = true;
   };
 
