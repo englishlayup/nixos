@@ -199,6 +199,8 @@
     clipse
   ];
 
+  environment.etc."/bin/bash".source = "${pkgs.bash}/bin/bash";
+
   programs.fish.enable = true;
 
   programs.hyprland = {
