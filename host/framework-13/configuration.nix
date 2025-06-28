@@ -201,7 +201,7 @@
 
   environment = {
     pathsToLink = [
-      "bin"
+      "/bin"
     ];
     localBinInPath = true;
   };
