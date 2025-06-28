@@ -199,7 +199,12 @@
     clipse
   ];
 
-  environment.etc."/bin/bash".source = "${pkgs.bash}/bin/bash";
+  environment = {
+    pathsToLink = [
+      "/"
+    ];
+    localBinInPath = true;
+  };
 
   programs.fish.enable = true;
 
