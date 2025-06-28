@@ -201,8 +201,7 @@
 
   environment = {
     pathsToLink = [
-      "/"
-      "/home/englishlayup/Downloads/"
+      "bin"
     ];
     localBinInPath = true;
   };
