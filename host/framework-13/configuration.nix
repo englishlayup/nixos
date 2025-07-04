@@ -191,7 +191,9 @@
     playerctl
     wl-clipboard
     # Screenshot
-    grimblast
+    grim
+    slurp
+    hyprshot
     gimp3
     # Applications
     syncthing
