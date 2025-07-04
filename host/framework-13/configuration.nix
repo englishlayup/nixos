@@ -191,8 +191,7 @@
     playerctl
     wl-clipboard
     # Screenshot
-    grim
-    slurp
+    grimblast
     # Applications
     syncthing
     kdePackages.dolphin
