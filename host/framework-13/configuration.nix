@@ -192,6 +192,7 @@
     wl-clipboard
     # Screenshot
     grimblast
+    gimp3
     # Applications
     syncthing
     kdePackages.dolphin
