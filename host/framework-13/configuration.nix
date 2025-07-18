@@ -62,7 +62,6 @@
     enable = true;
     xkb = {
       layout = "us";
-      options = "caps:escape"; # Remap Caps Lock to Escape
       variant = "";
     };
   };
