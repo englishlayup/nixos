@@ -179,7 +179,6 @@
     home-manager
     # Browser
     librewolf
-    brave
     # Terminal
     ghostty
     # CLI Utils
