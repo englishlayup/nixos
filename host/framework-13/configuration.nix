@@ -58,7 +58,17 @@
   };
 
   # Configure keymap in X11
-  services.xserver.enable = true;
+  services.xserver = {
+    enable = true;
+    xkb = {
+      layout = "us";
+      options = "caps:escape"; # Remap Caps Lock to Escape
+      variant = "";
+    };
+  };
+
+  # Console keymap (for TTY)
+  console.useXkbConfig = true; # Use X11 keymap settings for console
 
   services.kanata = {
     enable = true;
