@@ -58,13 +58,7 @@
   };
 
   # Configure keymap in X11
-  services.xserver = {
-    enable = true;
-    xkb = {
-      layout = "us";
-      variant = "";
-    };
-  };
+  services.xserver.enable = true;
 
   services.kanata = {
     enable = true;
@@ -101,9 +95,6 @@
       };
     };
   };
-
-  # Console keymap (for TTY)
-  console.useXkbConfig = true; # Use X11 keymap settings for console
 
   # Enable screensharing with pipewire
   security.rtkit.enable = true;
