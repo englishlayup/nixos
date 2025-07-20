@@ -155,7 +155,7 @@
           )
           (defvar
            tap-time 200
-           hold-time 250
+           hold-time 200
           )
           (defalias
            caps (tap-hold 100 200 esc lctl)
