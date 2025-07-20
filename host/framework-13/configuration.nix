@@ -154,8 +154,8 @@
            caps a s d f j k l ;
           )
           (defvar
-           tap-time 300
-           hold-time 320
+           tap-time 200
+           hold-time 250
           )
           (defalias
            caps (tap-hold 100 200 esc lctl)
@@ -230,6 +230,8 @@
     syncthing
     kdePackages.dolphin
     clipse
+    # Remote desktop
+    rustdesk
   ];
 
   environment = {
