@@ -139,6 +139,13 @@
   # Polkit for authentication popups
   security.polkit.enable = true;
 
+  # services.dbus = {
+  #   enable = true;
+  #   userSessions = true;
+  # };
+
+  services.upower.enable = true;
+
   services.logind = {
     lidSwitch = "suspend";
     lidSwitchExternalPower = "lock";
