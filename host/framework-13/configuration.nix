@@ -226,7 +226,7 @@
     kdePackages.dolphin
     clipse
     # Remote desktop
-    rustdesk
+    rustdesk-flutter
   ];
 
   environment = {
