@@ -20,8 +20,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "framework-13"; # Define your hostname.
-  #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.hostName = "framework-13";
+  networking.nameservers = [ "100.100.100.100" "1.1.1.1" "1.0.0.1"];
+  networking.search = [ "beaver-rohu.ts.net" ];
 
   # Bluetooth
   hardware.bluetooth.enable = true;
