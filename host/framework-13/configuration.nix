@@ -23,6 +23,7 @@
   networking.hostName = "framework-13";
   networking.nameservers = [ "100.100.100.100" "1.1.1.1" "1.0.0.1"];
   networking.search = [ "beaver-rohu.ts.net" ];
+  services.tailscale.enable = true;
 
   # Bluetooth
   hardware.bluetooth.enable = true;
@@ -139,11 +140,6 @@
   };
   # Polkit for authentication popups
   security.polkit.enable = true;
-
-  # services.dbus = {
-  #   enable = true;
-  #   userSessions = true;
-  # };
 
   services.upower.enable = true;
 
@@ -264,8 +260,6 @@
   services.postgresql = {
     enable = true;
   };
-
-  services.tailscale.enable = true;
 
   # Hint Electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
