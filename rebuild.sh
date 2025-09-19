@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 HOST=$1
-if git diff --quiet '*.nix'; then
+if git diff --quiet; then
     echo "No changes detected, exiting."
     exit 0
 fi
