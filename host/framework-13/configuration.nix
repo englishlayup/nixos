@@ -157,11 +157,8 @@
           (defsrc
            caps
           )
-          (defalias
-           caps (tap-hold 100 180 esc lctl)
-          )
           (deflayer base
-           @caps
+           lctl
           )
         '';
       };
